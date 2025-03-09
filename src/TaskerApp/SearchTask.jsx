@@ -16,7 +16,7 @@ function SearchTask({ onSearch }) {
       />
       <button
         onClick={handleClick}
-        className="bg-orange-300 py-1 px-3 text-white capitalize"
+        className="bg-orange-500 py-1 px-3 text-white capitalize"
       >
         Search
       </button>

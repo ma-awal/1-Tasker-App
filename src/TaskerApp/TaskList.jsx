@@ -11,8 +11,8 @@ function TaskList({ tasks, onEdit, onDelete, isSearch }) {
     );
   }
   return (
-    <div className="overflow-x-auto">
-      <table className="min-w-full bg-white border border-gray-200 rounded-lg shadow-md">
+    <div className="overflow-x-auto  ">
+      <table className=" w-full m-auto  bg-white border border-gray-200 rounded-lg shadow-md">
         <thead className="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
           <tr>
             <th className="py-3 px-6 text-left">Title</th>
@@ -30,14 +30,16 @@ function TaskList({ tasks, onEdit, onDelete, isSearch }) {
                 key={id}
                 className="border-b border-gray-200 hover:bg-gray-100"
               >
-                <td className="py-3 px-6 text-left ">{title}</td>
-                <td className="py-3 px-6 text-left w-auto">{description}</td>
+                <td className="py-3 px-6 text-left font-semibold">{title}</td>
+                <td className="py-3 px-6 text-left font-medium  ">
+                  {description}
+                </td>
                 <td className="py-3 px-6 text-left flex gap-1">
                   {tags.map((tag, index) => {
                     return (
                       <span
                         key={index}
-                        className="bg-blue-100 text-blue-600 py-1 px-3 rounded-full text-xs flex-grow items-center"
+                        className="bg-blue-100 text-blue-600 py-1 px-3 rounded-full text-sm  "
                       >
                         {tag}
                       </span>
@@ -45,7 +47,7 @@ function TaskList({ tasks, onEdit, onDelete, isSearch }) {
                   })}
                 </td>
                 <td className="py-3 px-6 text-left">
-                  <span className="bg-green-100 text-green-600 py-1 px-3 rounded-full text-xs  ">
+                  <span className="bg-green-100 text-green-600 py-1 px-3 rounded-full text-sm  ">
                     {priority}
                   </span>
                 </td>

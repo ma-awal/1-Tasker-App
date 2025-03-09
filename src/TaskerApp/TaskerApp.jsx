@@ -57,7 +57,7 @@ function TaskerApp() {
     setTasks([...filteredTask]);
   }
   return (
-    <div className="basis-8/12 p-8 space-y-8 bg-slate-800 shadow-slate-400 shadow-sm rounded-md  my-4">
+    <div className=" w-3/4 m-auto p-8 space-y-8 bg-slate-800 shadow-slate-400 shadow-sm rounded-md  my-4">
       {showModal && (
         <TaskModal
           updateTask={updateTask}

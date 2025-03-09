@@ -5,9 +5,9 @@ import TaskerApp from './TaskerApp';
 
 export default function Layout() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-900    ">
+    <div className="h-screen flex flex-col bg-gray-900     ">
       <Header />
-      <main className=" lg:container flex-grow">
+      <main className=" lg:container flex-grow flex justify-center flex-col">
         <TaskerApp />
       </main>
       <Footer />
